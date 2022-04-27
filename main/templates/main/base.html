@@ -6,6 +6,15 @@
 		<title>Cadastro de Pessoas</title>
 	</head>
 	<body>
-		<h1>oi teste </h1>
+		<div>
+			<ul>
+				<li><a href="{% url 'home' %}">Home</a></li>
+				<li><a href="{% url 'pessoa.index' %}">Pessoas</a></li>
+			</ul>	
+		</div>
+		{% block content %}
+
+		{% endblock content %}
+		
 	</body>
 </html>
